@@ -1,36 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Tic Tac Toe</h1>
-    </header>
+    <h1 class="header">Tic Tac Toe</h1>
     <div class="box">
         <div class="row">
-            <input type="text" class="bt" readonly>
-            <input type="text" class="bt" readonly>
-            <input type="text" class="bt" readonly>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
         </div>
         <div class="row">
-            <input type="text" class="bt" readonly>
-            <input type="text" class="bt" readonly>
-            <input type="text" class="bt" readonly>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
         </div>
         <div class="row">
-            <input type="text" class="bt" readonly>
-            <input type="text" class="bt" readonly>
-            <input type="text" class="bt" readonly>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
         </div>
     </div>
     <div class="result-container">
-        <p class="result-text">Player X's turn</p>
+        <p class="result">Player X's turn</p>
     </div>
-    <button id="reset-button" disabled>Reset</button>
-    <script src="script.js"></script>
+    <button id="reset-btn" class="reset-btn" onclick="resetGame()" disabled>Reset</button>
+    <script src="app.js"></script>
 </body>
 </html>
